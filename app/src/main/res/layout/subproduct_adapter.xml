@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_7sdp"
+    app:cardCornerRadius="@dimen/_3sdp"
+    android:background="@drawable/rounded_button_grey"
+    android:orientation="vertical">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:paddingBottom="@dimen/_5sdp"
+    android:layout_height="wrap_content">
+  <ImageView
+      android:id="@+id/subproduct_image"
+      android:layout_width="@dimen/_100sdp"
+      android:layout_height="@dimen/_80sdp"
+     android:layout_margin="@dimen/_5sdp"
+
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent">
+
+  </ImageView>
+    <TextView
+        android:id="@+id/subproduct_name"
+        android:layout_width="@dimen/_170sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/subproduct_image"
+        app:layout_constraintTop_toTopOf="@id/subproduct_image"
+        android:text="Mother Choice  HMT Blue bag 2kgs"
+        android:gravity="center"
+
+        android:fontFamily="@font/poppins"
+       android:paddingTop="@dimen/_8sdp"
+       android:paddingLeft="@dimen/_8sdp"
+       android:paddingRight="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:ellipsize="middle"
+        android:maxLines="3"
+        android:textSize="@dimen/_10sdp"></TextView>
+  <TextView
+      android:id="@+id/product_qnty"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:layout_constraintStart_toEndOf="@id/subproduct_image"
+      app:layout_constraintTop_toBottomOf="@id/subproduct_name"
+      android:text="Quantity"
+      android:layout_marginTop="@dimen/_5sdp"
+      android:paddingLeft="@dimen/_13sdp"
+      android:paddingBottom="@dimen/_13sdp"
+      android:gravity="center"
+      android:fontFamily="@font/poppins"
+      android:textColor="@color/black"
+      android:textStyle="bold"
+      android:ellipsize="middle"
+      android:textSize="@dimen/_10sdp"></TextView>
+    <TextView
+        android:id="@+id/subproduct_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:gravity="center"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintEnd_toStartOf="@id/subproduct_name"
+        app:layout_constraintTop_toBottomOf="@id/subproduct_name"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:id="@+id/txt_special"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="@dimen/_8sdp"
+       android:layout_marginStart="@dimen/_10sdp"
+        app:layout_constraintTop_toBottomOf="@id/subproduct_image"
+        app:layout_constraintStart_toStartOf="@id/subproduct_image"
+        android:text="Special Rate:"
+        android:textSize="@dimen/_12sdp"
+        android:textFontWeight="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sale_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins"
+        android:layout_marginTop="@dimen/_8sdp"
+       android:layout_marginStart="@dimen/_2sdp"
+        app:layout_constraintTop_toBottomOf="@id/subproduct_image"
+        app:layout_constraintStart_toEndOf="@id/txt_special"
+
+        android:text="\u20b9 125.00"
+        android:textColor="@color/red"
+        android:textSize="@dimen/_12sdp"
+        android:textFontWeight="1"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/offer_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+       android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+       app:layout_constraintStart_toEndOf="@id/sale_price"
+        app:layout_constraintTop_toBottomOf="@id/subproduct_image"
+        android:text="\u20b9 125.00"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_13sdp"
+        android:textFontWeight="1"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/outofstock_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        app:layout_constraintStart_toEndOf="@id/offer_price"
+        app:layout_constraintTop_toBottomOf="@id/subproduct_image"
+        android:background="@drawable/rounded_button_red"
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/_8sdp"
+
+        android:fontFamily="@font/poppins"
+        android:padding="@dimen/_1sdp"
+        android:text="Out of Stock"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_8sdp"
+        android:textStyle="bold" />
+    <ImageButton
+        android:id="@+id/minus_btn"
+        app:layout_constraintEnd_toStartOf="@id/qty_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_margin="@dimen/_1sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:background="@color/orange"
+        android:src="@drawable/ic_icon_feather_minus"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/qty_btn"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:background="@color/white"
+        android:fontFamily="@font/poppins"
+        android:layout_marginBottom="@dimen/_2sdp"
+        app:layout_constraintEnd_toStartOf="@id/plus_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center"
+        android:padding="@dimen/_1sdp"
+        android:text="0"
+
+        android:textColor="@color/black"
+        android:textSize="@dimen/_12sdp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/plus_btn"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:layout_marginRight="@dimen/_15sdp"
+        app:layout_constraintEnd_toStartOf="@id/addtocart_btn"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@color/purple_200"
+        android:padding="@dimen/_1sdp"
+        android:src="@drawable/ic_baseline_add_24"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/addtocart_btn"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right"
+        android:layout_margin="@dimen/_1sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:background="@drawable/rounded_button_green"
+       app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="@dimen/_3sdp"
+        android:fontFamily="@font/poppins"
+        android:text="Add"
+        android:visibility="gone"
+        android:gravity="center"
+        android:paddingStart="@dimen/_3sdp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp"
+        android:textStyle="bold" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

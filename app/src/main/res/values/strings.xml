@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">MotherChoice</string>
+    <string name="title_activity_home_screen">HomeScreen</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_basket">My Basket</string>
+    <string name="menu_myprofile">My Profile</string>
+    <string name="menu_contactus">Contact Us</string>
+    <string name="api_key">61d7193e52d6er4AuKwW0MjIU61d7193e52d6eYAqnHTf7</string>
+    <string name="fcm_key">AAAAWG2_7KE:APA91bHmL7TG-xL88rlB7WdbtH_WhXgpUOJHQ7OSMSXJQkuvD6RAQpX_KBQ-p2Dd2U7-gaRpEWTBftmbH4YWcAoOa58UBWuXTmyZyQVaGLGUUW96r_uZaw70v-RnVyMT0vvfuOnkQRj8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="rupee_symbol">\u20B9</string>
+
+
+</resources>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@id/action_bar_title"
+    android:layout_gravity="center"
+    android:weightSum="1"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_gravity="start"
+        android:layout_weight="0.1"
+        android:scaleType="fitXY"
+        android:layout_marginBottom="@dimen/_4sdp"
+        android:src="@drawable/logo"
+        />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <ImageView
+        android:id="@+id/phone_ic"
+        android:layout_width="@dimen/_34sdp"
+        android:layout_height="@dimen/_34sdp"
+        android:padding="@dimen/_5sdp"
+
+        android:onClick="onPhoneIconClick"
+        android:focusable="true"
+        android:layout_gravity="center"
+        android:src="@drawable/phone_ic"
+        />
+
+    <TextView
+        android:id="@+id/phonenumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/poppins"
+        android:onClick="onPhonenumbersclick"
+        android:padding="@dimen/_1sdp"
+        android:text="9642236668\n9154102137\n9849566813"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_10sdp"
+        android:textStyle="bold"></TextView>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.royalit.motherchoice.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.royalit.motherchoice.ui.gallery.GalleryFragment"
+        android:label="Products"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.royalit.motherchoice.ui.slideshow.SlideshowFragment"
+        android:label="Notifications"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.royalit.motherchoice.ui.home.MyProfile_Fragment"
+        android:label="MyProfile"
+        tools:layout="@layout/myprofile_screen" />
+    <fragment
+        android:id="@+id/navigation_products"
+        android:name="com.royalit.motherchoice.ui.home.Products_Fragment"
+        android:label="MyProfile"
+        tools:layout="@layout/products_screen" />
+    <fragment
+        android:id="@+id/navigation_viewallproducts"
+        android:name="com.royalit.motherchoice.ui.home.ViewAllProducts_Fragment"
+        android:label="MyProfile"
+        tools:layout="@layout/products_screen" />
+    <fragment
+        android:id="@+id/navigation_orderhis"
+        android:name="com.royalit.motherchoice.ui.home.OrderHistory_Fragment"
+        android:label="MyProfile"
+        tools:layout="@layout/orderhistory_screen" />
+    <fragment
+        android:id="@+id/navigation_orderdetails"
+        android:name="com.royalit.motherchoice.ui.home.OrderHistory_Fragment"
+        android:label="MyProfile"
+        tools:layout="@layout/orderhistory_screen" />
+    <fragment
+        android:id="@+id/navigation_mybasket"
+        android:name="com.royalit.motherchoice.ui.home.MyBasket_Fragment"
+        android:label="MyProfile"
+        tools:layout="@layout/mybasket_screen" />
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.royalit.motherchoice.ui.home.Cart_Fragment"
+        android:label="Cart"
+        tools:layout="@layout/cart_screen" />
+    <fragment
+        android:id="@+id/navigation_sucess"
+        android:name="com.royalit.motherchoice.ui.home.Sucess_Fragment"
+        android:label="Cart"
+        tools:layout="@layout/sucess_screen" />
+    <fragment
+        android:id="@+id/nav_contactus"
+        android:name="com.royalit.motherchoice.ui.home.Contactus_Fragment"
+        android:label="MyProfile"
+        tools:layout="@layout/contactus_screen" />
+    <fragment
+        android:id="@+id/nav_product_details"
+        android:name="com.royalit.motherchoice.ui.home.ProductinDetails_Fragment"
+        android:label="MyProfile"
+        tools:layout="@layout/productdetails_screen" />
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.royalit.motherchoice.ui.home.Search_Fragment"
+        android:label="MyProfile"
+        tools:layout="@layout/search_screen" />
+    <fragment
+        android:id="@+id/navigation_notify"
+        android:name="com.royalit.motherchoice.ui.home.Notification_Fragment"
+        android:label="Navigation_notify" />
+</navigation>
